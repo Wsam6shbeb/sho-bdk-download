@@ -1,74 +1,37 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#5427c7">
-  <meta name="description" content="شو بدك؟ منصة لطلب الخدمات والتواصل مع مقدميها في سوريا.">
-  <title>شو بدك؟ | تنزيل التطبيق</title>
-  <style>
-    :root{color-scheme:light;--purple:#5b2acb;--deep:#31116f;--ink:#201735;--muted:#716982;--bg:#f7f5fc}
-    *{box-sizing:border-box}
-    body{margin:0;min-height:100vh;font-family:Tahoma,Arial,sans-serif;color:var(--ink);background:radial-gradient(ellipse at 85% 10%,#e8ddff 0,transparent 35%),radial-gradient(ellipse at 10% 90%,#e6e0ff 0,transparent 30%),var(--bg);display:flex;flex-direction:column}
-    header{width:min(1080px,92%);margin:0 auto;padding:25px 0;display:flex;align-items:center;gap:12px}
-    .logo{width:48px;height:48px;border-radius:16px;background:linear-gradient(145deg,#7a4ae7,var(--deep));color:white;display:grid;place-items:center;font-size:27px;font-weight:bold;box-shadow:0 8px 20px #5427c733}
-    .brand{font-size:22px;font-weight:800}.brand small{display:block;font-size:12px;color:var(--muted);font-weight:500;margin-top:4px}
-    main{width:min(1080px,92%);margin:auto;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:40px;padding:35px 0 65px}
-    .tag{display:inline-flex;align-items:center;gap:8px;border:1px solid #e2d8fb;background:#fff9;border-radius:999px;padding:9px 14px;color:var(--purple);font-size:13px;font-weight:bold}
-    h1{font-size:clamp(40px,6vw,66px);line-height:1.2;letter-spacing:-1.5px;margin:22px 0 16px}h1 span{color:var(--purple)}
-    .lead{font-size:18px;line-height:1.95;color:var(--muted);max-width:540px;margin:0 0 28px}
-    .actions{display:grid;gap:12px;max-width:390px}
-    .download{display:flex;align-items:center;gap:13px;padding:16px 18px;border-radius:17px;background:#e9e4f3;color:#837b91;border:1px solid #e1dbea;cursor:not-allowed}
-    .download .symbol{font-size:25px;width:36px;text-align:center}.download strong{display:block;font-size:16px;color:#625a70}.download small{display:block;margin-top:5px;font-size:12px}
-    .note{font-size:12px;line-height:1.8;color:var(--muted);margin-top:17px;max-width:390px}
-    .visual{min-height:380px;display:grid;place-items:center;position:relative}
-    .halo{width:min(360px,85vw);aspect-ratio:1;border-radius:50%;background:linear-gradient(145deg,#e4d7ff,#f7f2ff);display:grid;place-items:center;position:relative}
-    .phone{width:190px;height:310px;border:8px solid #2e2050;border-radius:32px;background:white;box-shadow:0 28px 55px #35205c2b;transform:rotate(-7deg);padding:12px;overflow:hidden}
-    .speaker{height:5px;width:48px;border-radius:9px;background:#d8d2e5;margin:0 auto 17px}
-    .screen-logo{height:75px;border-radius:20px;background:linear-gradient(145deg,#7040dc,#32116f);color:white;display:grid;place-items:center;font-size:42px;font-weight:bold}
-    .line{height:10px;border-radius:8px;background:#eee9f8;margin-top:14px}.line.short{width:60%}
-    .tiles{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:15px}.tile{height:57px;border-radius:12px;background:#f0eafa;border:1px solid #e6dcf7}
-    .float{position:absolute;background:white;border:1px solid #eee8fa;border-radius:15px;padding:12px 15px;box-shadow:0 12px 30px #35205c12;font-size:13px;font-weight:bold}.float.one{top:55px;right:-3px}.float.two{bottom:65px;left:-2px}
-    footer{padding:22px 4%;text-align:center;color:var(--muted);font-size:12px;border-top:1px solid #e9e4f3}
-    @media(max-width:760px){main{grid-template-columns:1fr;gap:10px;padding-top:25px}.visual{grid-row:1;min-height:300px}.halo{width:270px}.phone{transform:rotate(-5deg) scale(.83)}.float.one{top:30px;right:0}.float.two{bottom:35px;left:0}h1{font-size:46px}.lead{font-size:16px}.actions{max-width:none}}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#5427c7"><meta name="description" content="شو بدك؟ منصة لطلب الخدمات والتواصل مع مقدميها في سوريا.">
+<title>شو بدك؟ | تنزيل التطبيق</title>
+<style>
+:root{color-scheme:light;--purple:#5b2acb;--deep:#31116f;--ink:#201735;--muted:#716982;--bg:#f7f5fc}*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Tahoma,Arial,sans-serif;color:var(--ink);background:radial-gradient(ellipse at 85% 10%,#e8ddff 0,transparent 35%),radial-gradient(ellipse at 10% 90%,#e6e0ff 0,transparent 30%),var(--bg);display:flex;flex-direction:column}
+header{width:min(1080px,92%);margin:0 auto;padding:25px 0;display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border-radius:16px;background:linear-gradient(145deg,#7a4ae7,var(--deep));color:white;display:grid;place-items:center;font-size:27px;font-weight:bold;box-shadow:0 8px 20px #5427c733}.brand{font-size:22px;font-weight:800}.brand small{display:block;font-size:12px;color:var(--muted);font-weight:500;margin-top:4px}
+main{width:min(1080px,92%);margin:auto;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:40px;padding:35px 0 65px}.tag{display:inline-flex;align-items:center;gap:8px;border:1px solid #e2d8fb;background:#fff9;border-radius:999px;padding:9px 14px;color:var(--purple);font-size:13px;font-weight:bold}
+h1{font-size:clamp(40px,6vw,66px);line-height:1.2;letter-spacing:-1.5px;margin:22px 0 16px}h1 span{color:var(--purple)}.lead{font-size:18px;line-height:1.95;color:var(--muted);max-width:540px;margin:0 0 28px}
+.actions{display:grid;gap:12px;max-width:390px}.download{display:flex;align-items:center;gap:13px;padding:16px 18px;border-radius:17px;background:#e9e4f3;color:#837b91;border:1px solid #e1dbea;cursor:not-allowed}.symbol{font-size:25px;width:36px;text-align:center}.download strong{display:block;font-size:16px;color:#625a70}.download small{display:block;margin-top:5px;font-size:12px}
+.note{font-size:12px;line-height:1.8;color:var(--muted);margin-top:17px;max-width:390px}.support{margin-top:24px;padding:19px;border:1px solid #e6def6;background:#ffffffb8;border-radius:18px;max-width:390px}.support h2{font-size:17px;margin:0 0 8px}.support p{font-size:13px;line-height:1.8;color:var(--muted);margin:0 0 13px}.support a{display:inline-flex;align-items:center;gap:8px;background:var(--purple);color:white;text-decoration:none;font-size:14px;font-weight:bold;padding:11px 16px;border-radius:12px}.support a:hover{background:var(--deep)}
+.visual{min-height:380px;display:grid;place-items:center;position:relative}.halo{width:min(360px,85vw);aspect-ratio:1;border-radius:50%;background:linear-gradient(145deg,#e4d7ff,#f7f2ff);display:grid;place-items:center;position:relative}.phone{width:190px;height:310px;border:8px solid #2e2050;border-radius:32px;background:white;box-shadow:0 28px 55px #35205c2b;transform:rotate(-7deg);padding:12px;overflow:hidden}.speaker{height:5px;width:48px;border-radius:9px;background:#d8d2e5;margin:0 auto 17px}.screen-logo{height:75px;border-radius:20px;background:linear-gradient(145deg,#7040dc,#32116f);color:white;display:grid;place-items:center;font-size:42px;font-weight:bold}.line{height:10px;border-radius:8px;background:#eee9f8;margin-top:14px}.line.short{width:60%}.tiles{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:15px}.tile{height:57px;border-radius:12px;background:#f0eafa;border:1px solid #e6dcf7}.float{position:absolute;background:white;border:1px solid #eee8fa;border-radius:15px;padding:12px 15px;box-shadow:0 12px 30px #35205c12;font-size:13px;font-weight:bold}.float.one{top:55px;right:-3px}.float.two{bottom:65px;left:-2px}
+footer{padding:22px 4%;text-align:center;color:var(--muted);font-size:12px;border-top:1px solid #e9e4f3}
+@media(max-width:760px){main{grid-template-columns:1fr;gap:10px;padding-top:25px}.visual{grid-row:1;min-height:300px}.halo{width:270px}.phone{transform:rotate(-5deg) scale(.83)}.float.one{top:30px;right:0}.float.two{bottom:35px;left:0}h1{font-size:46px}.lead{font-size:16px}.actions,.support{max-width:none}}
+</style>
 </head>
 <body>
-  <header>
-    <div class="logo" aria-hidden="true">ش</div>
-    <div class="brand">شو بدك؟<small>خدمات أقرب وأسهل</small></div>
-  </header>
-  <main>
-    <section>
-      <div class="tag">✦ منصة الخدمات في سوريا</div>
-      <h1>شو بدك؟<br><span>بتلاقيه هون.</span></h1>
-      <p class="lead">منصة لطلب الخدمات والتواصل مع مقدميها في سوريا. اختصر الطريق وخلّي طلب خدمتك أسهل.</p>
-      <div class="actions">
-        <div class="download" aria-disabled="true">
-          <div class="symbol" aria-hidden="true">↓</div>
-          <div><strong>تنزيل التطبيق للأندرويد</strong><small>سيُتاح قريباً</small></div>
-        </div>
-        <div class="download" aria-disabled="true">
-          <div class="symbol" aria-hidden="true">▶</div>
-          <div><strong>Google Play</strong><small>قريباً على المتجر</small></div>
-        </div>
-      </div>
-      <p class="note">روابط التنزيل ستظهر هنا فور جهوزية التطبيق. احفظ الصفحة وارجع إلها قريباً.</p>
-    </section>
-    <section class="visual" aria-label="تصميم توضيحي للتطبيق">
-      <div class="halo">
-        <div class="phone">
-          <div class="speaker"></div>
-          <div class="screen-logo">ش</div>
-          <div class="line"></div><div class="line short"></div>
-          <div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div>
-          <div class="line"></div><div class="line short"></div>
-        </div>
-        <div class="float one">✦ خدمات متنوعة</div>
-        <div class="float two">✓ بسهولة ووضوح</div>
-      </div>
-    </section>
-  </main>
-  <footer>© <span id="year">2026</span> شو بدك؟ — جميع الحقوق محفوظة</footer>
+<header><div class="logo" aria-hidden="true">ش</div><div class="brand">شو بدك؟<small>خدمات أقرب وأسهل</small></div></header>
+<main>
+<section>
+<div class="tag">✦ منصة الخدمات في سوريا</div>
+<h1>شو بدك؟<br><span>بتلاقيه هون.</span></h1>
+<p class="lead">منصة لطلب الخدمات والتواصل مع مقدميها في سوريا. اختصر الطريق وخلّي طلب خدمتك أسهل.</p>
+<div class="actions">
+<div class="download" aria-disabled="true"><div class="symbol" aria-hidden="true">↓</div><div><strong>تنزيل التطبيق للأندرويد</strong><small>سيُتاح قريباً</small></div></div>
+<div class="download" aria-disabled="true"><div class="symbol" aria-hidden="true">▶</div><div><strong>Google Play</strong><small>قريباً على المتجر</small></div></div>
+</div>
+<p class="note">روابط التنزيل ستظهر هنا فور جهوزية التطبيق. احفظ الصفحة وارجع إلها قريباً.</p>
+<div class="support"><h2>بحاجة إلى مساعدة؟</h2><p>إذا عندك سؤال أو واجهت مشكلة، تواصل مع فريق دعم شو بدك؟ عبر البريد الإلكتروني.</p><a href="mailto:shobdkhelpcenter@gmail.com?subject=%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%20%D8%AF%D8%B9%D9%85%20%D8%B4%D9%88%20%D8%A8%D8%AF%D9%83%D8%9F">✉ تواصل مع الدعم</a></div>
+</section>
+<section class="visual" aria-label="تصميم توضيحي للتطبيق"><div class="halo"><div class="phone"><div class="speaker"></div><div class="screen-logo">ش</div><div class="line"></div><div class="line short"></div><div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div><div class="line"></div><div class="line short"></div></div><div class="float one">✦ خدمات متنوعة</div><div class="float two">✓ بسهولة ووضوح</div></div></section>
+</main>
+<footer>© 2026 شو بدك؟ — جميع الحقوق محفوظة</footer>
 </body>
 </html>
